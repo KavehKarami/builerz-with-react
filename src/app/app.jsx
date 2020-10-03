@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/single" component={Single} exact={true} />
         <Route path="/team" component={Team} exact={true} />
       </Switch>
+      <div className="back-to-top"><i className="fa fa-chevron-up"></i></div>
     </Router>
   );
 }

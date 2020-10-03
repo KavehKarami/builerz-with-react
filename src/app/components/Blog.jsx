@@ -328,8 +328,6 @@ const Blog = () => {
       </div>
     </div>
     {/* <!-- Footer End --> */}
-
-    <a className="back-to-top"><i className="fa fa-chevron-up"></i></a>
   </div>
   );
 }
