@@ -13,14 +13,14 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Home} exact="true" />
-        <Route path="/about" component={About} exact="true" />
-        <Route path="/blog" component={Blog} exact="true" />
-        <Route path="/contact" component={Contact} exact="true" />
-        <Route path="/portfolio" component={Portfolio} exact="true" />
-        <Route path="/service" component={Service} exact="true" />
-        <Route path="/single" component={Single} exact="true" />
-        <Route path="/team" component={Team} exact="true" />
+        <Route path="/" component={Home} exact={true} />
+        <Route path="/about" component={About} exact={true} />
+        <Route path="/blog" component={Blog} exact={true} />
+        <Route path="/contact" component={Contact} exact={true} />
+        <Route path="/portfolio" component={Portfolio} exact={true} />
+        <Route path="/service" component={Service} exact={true} />
+        <Route path="/single" component={Single} exact={true} />
+        <Route path="/team" component={Team} exact={true} />
       </Switch>
     </Router>
   );
