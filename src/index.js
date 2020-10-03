@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./app/app";
+import * as serviceWorker from "./serviceWorker";
+
+/* --------------------------------- styles --------------------------------- */
+import "./assets/lib/animate/animate.css";
+import "./assets/lib/lightbox/css/lightbox.css";
+import "./assets/lib/owlcarousel/assets/owl.theme.default.css";
+import "./assets/lib/owlcarousel/assets/owl.carousel.css";
+import "./assets/lib/slick/slick-theme.css";
+import "./assets/lib/slick/slick.css";
+import "./assets/lib/flaticon/font/flaticon.css";
+import "./assets/styles/css/style.css";
+/* -------------------------------------------------------------------------- */
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
