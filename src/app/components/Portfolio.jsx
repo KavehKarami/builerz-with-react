@@ -310,7 +310,7 @@ const Portfolio = () => {
     </div>
     {/* <!-- Footer End --> */}
 
-    <div className="back-to-top"><i className="fa fa-chevron-up"></i></div>
+    <a className="back-to-top"><i className="fa fa-chevron-up"></i></a>
   </div>);
 }
 

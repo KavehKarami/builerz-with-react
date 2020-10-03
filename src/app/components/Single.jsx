@@ -718,7 +718,6 @@ const Single = () => {
       </div>
       {/* <!-- Footer End --> */}
 
-      {/* TODO replace this code instead other footer */}
       <a className="back-to-top"><i className="fa fa-chevron-up"></i></a>
     </div>
   );

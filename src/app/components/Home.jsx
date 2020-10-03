@@ -847,7 +847,7 @@ const Home = () => {
         </div>
         {/* <!-- Footer End --> */}
 
-        <a href="/#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
+        <a className="back-to-top"><i className="fa fa-chevron-up"></i></a>
       </div>
 
 
