@@ -9,10 +9,10 @@ const About = () => {
         <div className="row align-items-center">
           <div className="col-lg-4 col-md-12">
             <div className="logo">
-              <a href="index.html">
+              <Link to="/">
                 <h1>Builderz</h1>
                 {/* <!-- <img src="img/logo.jpg" alt="Logo"> --> */}
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-8 col-md-7 d-none d-lg-block">
