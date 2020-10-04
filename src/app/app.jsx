@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/portfolio" component={Portfolio} exact={true} />
           <Route path="/service" component={Service} exact={true} />
           <Route path="/single" component={Single} exact={true} />
-          <Route path="/team" component={About} exact={true} />
+          <Route path="/team" component={Team} exact={true} />
         </Switch>
         <div className="back-to-top"><i className="fa fa-chevron-up"></i></div>
       </Layout>
