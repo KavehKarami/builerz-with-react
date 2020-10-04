@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom";
+import CustomLink from "./CustomLink"
 
 const Navbar = () => {
+  let { pathname } = useLocation();
+
   return (
     <div className="nav-bar">
       <div className="container-fluid">
@@ -13,19 +16,20 @@ const Navbar = () => {
 
           <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div className="navbar-nav mr-auto">
-              <Link to="/" className="nav-item nav-link">Home</Link>
-              <Link to="/about" className="nav-item nav-link active">About</Link>
-              <Link to="/service" className="nav-item nav-link">Service</Link>
-              <Link to="/team" className="nav-item nav-link">Team</Link>
-              <Link to="/portfolio" className="nav-item nav-link">Project</Link>
+              <CustomLink exact={true} path={"/"} label="Home" />
+              <CustomLink exact={true} path={"/about"} label="About" />
+              <CustomLink exact={true} path={"/service"} label="Service" />
+              <CustomLink exact={true} path={"/team"} label="Team" />
+              <CustomLink exact={true} path={"/portfolio"} label="Project" />
+
               <div className="nav-item dropdown">
-                <a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                <a href="/" className={(pathname === "/blog" || pathname === "/single") ? "nav-link dropdown-toggle active" : `nav-link dropdown-toggle`} data-toggle="dropdown">Pages</a>
                 <div className="dropdown-menu">
                   <Link to="/blog" className="dropdown-item">Blog Page</Link>
                   <Link to="/single" className="dropdown-item">Single Page</Link>
                 </div>
               </div>
-              <Link to="/contact" className="nav-item nav-link">Contact</Link>
+              <CustomLink exact={true} path={"/contact"} label="Contact" />
             </div>
             <div className="ml-auto">
               <a className="btn" href="/">Get A Quote</a>
