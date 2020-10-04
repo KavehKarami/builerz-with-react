@@ -1,4 +1,5 @@
 import React from 'react';
+import FactItem from './FactItem';
 
 const Fact = () => {
   return (
@@ -7,46 +8,14 @@ const Fact = () => {
         <div className="row counters">
           <div className="col-md-6 fact-left wow slideInLeft">
             <div className="row">
-              <div className="col-6">
-                <div className="fact-icon">
-                  <i className="flaticon-worker"></i>
-                </div>
-                <div className="fact-text">
-                  <h2 data-toggle="counter-up">109</h2>
-                  <p>Expert Workers</p>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="fact-icon">
-                  <i className="flaticon-building"></i>
-                </div>
-                <div className="fact-text">
-                  <h2 data-toggle="counter-up">485</h2>
-                  <p>Happy Clients</p>
-                </div>
-              </div>
+              <FactItem icon="flaticon-worker" counter="109" title="Expert Workers" />
+              <FactItem icon="flaticon-building" counter="485" title="Happy Clients" />
             </div>
           </div>
           <div className="col-md-6 fact-right wow slideInRight">
             <div className="row">
-              <div className="col-6">
-                <div className="fact-icon">
-                  <i className="flaticon-address"></i>
-                </div>
-                <div className="fact-text">
-                  <h2 data-toggle="counter-up">789</h2>
-                  <p>Completed Projects</p>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="fact-icon">
-                  <i className="flaticon-crane"></i>
-                </div>
-                <div className="fact-text">
-                  <h2 data-toggle="counter-up">890</h2>
-                  <p>Running Projects</p>
-                </div>
-              </div>
+              <FactItem icon="flaticon-address" counter="789" title="Completed Projects" />
+              <FactItem icon="flaticon-crane" counter="890" title="Running Projects" />
             </div>
           </div>
         </div>
