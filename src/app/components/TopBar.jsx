@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
-    <div div className="top-bar" >
+    <div className="top-bar">
       <div className="container-fluid">
         <div className="row align-items-center">
           <div className="col-lg-4 col-md-12">
