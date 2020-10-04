@@ -1,7 +1,6 @@
 import React from 'react';
 
 const BlogItem = (props) => {
-  console.log(props.imgURL);
   return (
     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={props.dataWowDelay || "0"}>
       <div className="blog-item">
