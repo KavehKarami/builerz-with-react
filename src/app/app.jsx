@@ -1,28 +1,31 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import About from './components/About';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Home from './components/Home';
-import Portfolio from './components/Portfolio';
-import Service from './components/Service';
-import Single from './components/Single';
-import Team from './components/Team';
+import About from './containers/About';
+import Blog from './containers/Blog';
+import Contact from './containers/Contact';
+import Home from './containers/Home';
+import Portfolio from './containers/Portfolio';
+import Service from './containers/Service';
+import Single from './containers/Single';
+import Team from './containers/Team';
+import Layout from './containers/Layout';
 
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" component={Home} exact={true} />
-        <Route path="/about" component={About} exact={true} />
-        <Route path="/blog" component={Blog} exact={true} />
-        <Route path="/contact" component={Contact} exact={true} />
-        <Route path="/portfolio" component={Portfolio} exact={true} />
-        <Route path="/service" component={Service} exact={true} />
-        <Route path="/single" component={Single} exact={true} />
-        <Route path="/team" component={Team} exact={true} />
-      </Switch>
-      <div className="back-to-top"><i className="fa fa-chevron-up"></i></div>
+      <Layout>
+        <Switch>
+          <Route path="/" component={About} exact={true} />
+          <Route path="/about" component={About} exact={true} />
+          <Route path="/blog" component={About} exact={true} />
+          <Route path="/contact" component={About} exact={true} />
+          <Route path="/portfolio" component={About} exact={true} />
+          <Route path="/service" component={About} exact={true} />
+          <Route path="/single" component={About} exact={true} />
+          <Route path="/team" component={About} exact={true} />
+        </Switch>
+        <div className="back-to-top"><i className="fa fa-chevron-up"></i></div>
+      </Layout>
     </Router>
   );
 }
