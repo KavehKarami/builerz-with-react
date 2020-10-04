@@ -5,8 +5,8 @@ const Form = (props) => {
     <form name={props.formName} id={props.formId} noValidate="novalidate">
       {props.children}
 
-      <div>
-        <button className="btn" type="submit" id={props.btnId}>Send Message</button>
+      <div className={props.btnGpClass}>
+        <button className="btn" type="submit" id={props.btnId}>{props.btnText}</button>
       </div>
     </form>
 
