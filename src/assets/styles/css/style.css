@@ -2215,3 +2215,9 @@ a:focus {
     text-align: center;
   }
 }
+
+.single .owl-prev,
+.single .owl-next {
+  border-radius: 5px;
+  border: none;
+}
