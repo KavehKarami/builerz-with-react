@@ -4,6 +4,8 @@ import Fact from '../components/Fact';
 import Faq from '../components/Faq';
 import Carousel from '../components/Home/Carousel';
 import CarouselItem from '../components/Home/CarouselItem';
+import Feature from '../components/Home/Feature';
+import FeatureItem from '../components/Home/FeatureItem';
 import LatestBlog from '../components/LatestBlog';
 import ServicePage from '../components/service/ServicePage';
 import TeamContainer from '../components/team/TeamContainer';
@@ -19,53 +21,16 @@ const Home = () => {
         <CarouselItem imgURL={require("../../assets/img/carousel-3.jpg")} text="We Are Trusted" title="For Your Dream Home" href="https://htmlcodex.com/construction-company-website-template" linkText="Get A Quote" />
       </Carousel>
 
-
-      {/* <!-- Feature Start--> */}
-      <div className="feature wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container-fluid">
-          <div className="row align-items-center">
-            <div className="col-lg-4 col-md-12">
-              <div className="feature-item">
-                <div className="feature-icon">
-                  <i className="flaticon-worker"></i>
-                </div>
-                <div className="feature-text">
-                  <h3>Expert Worker</h3>
-                  <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-12">
-              <div className="feature-item">
-                <div className="feature-icon">
-                  <i className="flaticon-building"></i>
-                </div>
-                <div className="feature-text">
-                  <h3>Quality Work</h3>
-                  <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-12">
-              <div className="feature-item">
-                <div className="feature-icon">
-                  <i className="flaticon-call"></i>
-                </div>
-                <div className="feature-text">
-                  <h3>24/7 Support</h3>
-                  <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Feature End--> */}
-
-
+      <Feature>
+        <FeatureItem icon="flaticon-worker" title="Expert Worker" text="Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non" />
+        <FeatureItem icon="flaticon-building" title="Quality Work" text="Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non" />
+        <FeatureItem icon="flaticon-call" title="24/7 Support" text="Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non" />
+      </Feature>
 
       <AboutCompany />
+
       <Fact />
+
       <ServicePage />
 
 
