@@ -2,6 +2,8 @@ import React from 'react';
 import AboutCompany from '../components/AboutCompany';
 import Fact from '../components/Fact';
 import Faq from '../components/Faq';
+import Carousel from '../components/Home/Carousel';
+import CarouselItem from '../components/Home/CarouselItem';
 import LatestBlog from '../components/LatestBlog';
 import ServicePage from '../components/service/ServicePage';
 import TeamContainer from '../components/team/TeamContainer';
@@ -11,52 +13,11 @@ import TeamPage from '../components/team/TeamPage';
 const Home = () => {
   return (
     <React.Fragment>
-      {/* <!-- Carousel Start --> */}
-      <div id="carousel" className="carousel slide" data-ride="carousel">
-        <ol className="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" className="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={require("../../assets/img/carousel-1.jpg")} alt="Carousel" />
-            <div className="carousel-caption">
-              <p className="animated fadeInRight">We Are Professional</p>
-              <h1 className="animated fadeInLeft">For Your Dream Project</h1>
-              <a className="btn animated fadeInUp" href="/https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
-            </div>
-          </div>
-
-          <div className="carousel-item">
-            <img src={require("../../assets/img/carousel-2.jpg")} alt="Carousel" />
-            <div className="carousel-caption">
-              <p className="animated fadeInRight">Professional Builder</p>
-              <h1 className="animated fadeInLeft">We Build Your Home</h1>
-              <a className="btn animated fadeInUp" href="/https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
-            </div>
-          </div>
-
-          <div className="carousel-item">
-            <img src={require("../../assets/img/carousel-3.jpg")} alt="Carousel" />
-            <div className="carousel-caption">
-              <p className="animated fadeInRight">We Are Trusted</p>
-              <h1 className="animated fadeInLeft">For Your Dream Home</h1>
-              <a className="btn animated fadeInUp" href="/https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
-            </div>
-          </div>
-        </div>
-
-        <a className="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a className="carousel-control-next" href="#carousel" role="button" data-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only">Next</span>
-        </a>
-      </div>
-      {/* <!-- Carousel End --> */}
+      <Carousel >
+        <CarouselItem className="active" imgURL={require("../../assets/img/carousel-1.jpg")} text="We Are Professional" title="For Your Dream Project" href="https://htmlcodex.com/construction-company-website-template" linkText="Get A Quote" />
+        <CarouselItem imgURL={require("../../assets/img/carousel-2.jpg")} text="Professional Builder" title="We Build Your Home" href="https://htmlcodex.com/construction-company-website-template" linkText="Get A Quote" />
+        <CarouselItem imgURL={require("../../assets/img/carousel-3.jpg")} text="We Are Trusted" title="For Your Dream Home" href="https://htmlcodex.com/construction-company-website-template" linkText="Get A Quote" />
+      </Carousel>
 
 
       {/* <!-- Feature Start--> */}
