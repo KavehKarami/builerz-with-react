@@ -10,8 +10,13 @@ const CommentItem = (props) => {
         <div className="comment-text">
           <h3><a href="/single/#">{props.person}</a></h3>
           <span>{props.time}</span>
-          {props.children}
-          <a className="btn" href="/single/#">Reply</a>
+          <p>{props.comment}</p>
+          <a className={props.children ? "btn mb-4" : "btn"} href="/single/#">Reply</a>
+          {props.children && (
+            <ul className="p-0 list-style-none">
+              {props.children}
+            </ul>
+          )}
         </div>
       </div>
     </li>
