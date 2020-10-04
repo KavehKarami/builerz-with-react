@@ -6,6 +6,7 @@ import Carousel from '../components/Home/Carousel';
 import CarouselItem from '../components/Home/CarouselItem';
 import Feature from '../components/Home/Feature';
 import FeatureItem from '../components/Home/FeatureItem';
+import Testimonial from '../components/Home/testimonial/Testimonial';
 import LatestBlog from '../components/LatestBlog';
 import ServicePage from '../components/service/ServicePage';
 import TeamContainer from '../components/team/TeamContainer';
@@ -72,73 +73,7 @@ const Home = () => {
 
       <Faq />
 
-
-      {/* <!-- Testimonial Start --> */}
-      <div className="testimonial wow fadeIn" data-wow-delay="0.1s">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="testimonial-slider-nav">
-                <div className="slider-nav"><img src={require("../../assets/img/testimonial-1.jpg")} alt="Testimonial" /></div>
-                <div className="slider-nav"><img src={require("../../assets/img/testimonial-2.jpg")} alt="Testimonial" /></div>
-                <div className="slider-nav"><img src={require("../../assets/img/testimonial-3.jpg")} alt="Testimonial" /></div>
-                <div className="slider-nav"><img src={require("../../assets/img/testimonial-4.jpg")} alt="Testimonial" /></div>
-                <div className="slider-nav"><img src={require("../../assets/img/testimonial-1.jpg")} alt="Testimonial" /></div>
-                <div className="slider-nav"><img src={require("../../assets/img/testimonial-2.jpg")} alt="Testimonial" /></div>
-                <div className="slider-nav"><img src={require("../../assets/img/testimonial-3.jpg")} alt="Testimonial" /></div>
-                <div className="slider-nav"><img src={require("../../assets/img/testimonial-4.jpg")} alt="Testimonial" /></div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
-              <div className="testimonial-slider">
-                <div className="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div className="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div className="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div className="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div className="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div className="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div className="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div className="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- Testimonial End --> */}
+      <Testimonial dataWowDelay="0.1s" />
 
       <LatestBlog />
     </React.Fragment>
